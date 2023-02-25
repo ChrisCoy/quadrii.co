@@ -1,5 +1,5 @@
 function Footer() {
-  return <div>HEADER</div>;
+  return <div>    HEADER</div>;
 }
 
 export { Footer };

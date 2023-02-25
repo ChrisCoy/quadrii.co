@@ -12,7 +12,7 @@ function Header() {
           <a href="">Games</a>
           <a href="">Feed</a>
           <a href="">Generos</a>
-          <a href="">Sobre</a>
+          <a href="">Sobre      </a>
         </nav>
       </Container>
     </div>
