@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 
-  html {
-    @apply text-gray-500;
-    @apply bg-background;
-  }
+	html {
+		@apply text-gray-500;
+		@apply bg-background;
+	}
 
-  /* button {
+	/* button {
   border: none;
   cursor: pointer;
   outline: none;
@@ -25,8 +25,8 @@ a {
   text-decoration: none;
 } */
 
-  ::selection {
-    color: white;
-    @apply bg-purple-700;
-  }
+	::selection {
+		color: white;
+		@apply bg-purple-700;
+	}
 }
