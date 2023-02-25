@@ -12,6 +12,7 @@
 
   html {
     @apply text-gray-500;
+    @apply bg-background;
   }
 
   /* button {
@@ -26,6 +27,6 @@ a {
 
   ::selection {
     color: white;
-    @apply bg-background;
+    @apply bg-purple-700;
   }
 }
