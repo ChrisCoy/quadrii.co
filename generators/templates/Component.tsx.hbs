@@ -5,9 +5,9 @@ interface {{pascalCase name}}Props {
   className?: string;
 }
 
-function {{pascalCase name}}({children, className}:{{pascalCase name}}Props) {
+function {{pascalCase name}}({children, className = ""}:{{pascalCase name}}Props) {
   return(
-    <div className={className}>
+    <div className={`${className}`}>
       {children}
     </div>
   )

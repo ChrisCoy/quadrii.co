@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
@@ -42,7 +43,27 @@ module.exports = {
       blue: {
         500: "#297FFF",
       },
+      background: "#F8F8F8",
+    },
+    keyframes: {
+      effect: {
+        "0%, 100%": { transform: "rotate(-180deg)" },
+        "25%": { transform: "rotate(90deg) scale(0.5)" },
+        "50%": { transform: "translate(-20%, -20%) rotate(-90deg)" },
+        "100%": { transform: "rotate(0deg)" },
+      },
+      "effect-2": {
+        "0%, 100%": {
+          transform: "scale(0.7) translate(100%, -100%) rotate(-50deg)",
+        },
+        "50%": { transform: "translate(50%, -50%) scale(1.2) rotate(-20deg)" },
+        "100%": { transform: "translate(0) scale(1) rotate(0deg)" },
+      },
+    },
+    animation: {
+      effect: "effect 1s ease-in-out",
+      "effect-2": "effect-2 1.5s ease-in-out",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

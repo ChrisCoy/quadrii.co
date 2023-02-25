@@ -5,8 +5,14 @@ interface ContainerProps {
   className?: string;
 }
 
-function Container({ children, className }: ContainerProps) {
-  return <div className={className}>{children}</div>;
+function Container({ children, className = "" }: ContainerProps) {
+  return (
+    <div
+      className={`mx-auto flex w-full max-w-screen-xl gap-4 px-4 ${className}`}
+    >
+      {children}
+    </div>
+  );
 }
 
 export { Container };
