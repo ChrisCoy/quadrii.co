@@ -45,7 +45,7 @@ function Footer() {
       <div className={"py-3 flex flex-col items-center justify-center"}>
         <p className={"text-center flex gap-1 items-center justify-center align-middle"}>
           <span>Made width</span>
-          <Image src="/icons/Coffee.png" width={20} height={20} alt="coffe icon" />
+          <Image src="/icons/Coffee.png" width={20} height={20} quality={100} alt="coffe icon" />
           <span>and</span>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M8 1.22644C12.4381 -3.03141 23.5344 4.41937 8 14C-7.53442 4.4203 3.56188 -3.03141 8 1.22644Z" fill="#6A563D" /></svg>
         </p>

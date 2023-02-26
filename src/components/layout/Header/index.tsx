@@ -19,7 +19,9 @@ function Header() {
 	return (
 		<header
 			className={cx(
-				"flex flex-col justify-around relative py-3 shadow-[2px_0px_5px_-2px_rgba(0,0,0,0.3)]",
+				"flex flex-col justify-around",
+				"relative pt-3 shadow-[2px_0px_5px_-2px_rgba(0,0,0,0.3)]",
+				"lg:h-20 lg:py-3",
 			)}
 		>
 			<Container className={cx("gap-4  flex justify-between items-center")}>
