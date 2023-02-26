@@ -43,7 +43,6 @@ function Header() {
 					</button>
 				</div>
 			</Container>
-			,
 			<NavigatorLinks
 				className={cx(
 					"lg:hidden w-full justify-center",
