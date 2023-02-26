@@ -6,6 +6,7 @@ function Footer() {
     <div className={"w-full h-auto py-4 flex items-center justify-center bg-[url('/images/banner_footer.png')] bg-cover bg-center"}>
       <div className={"w-auto flex flex-col gap-2 items-center justify-center"}>
         <Image
+          className={"select-none"}
           src={"/images/Logotipo.png"}
           width={180}
           height={180}
@@ -13,6 +14,7 @@ function Footer() {
         />
 
         <Image
+          className={"select-none"}
           src={"/images/emojis.png"}
           width={200}
           height={400}
