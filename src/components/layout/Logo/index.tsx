@@ -1,13 +1,15 @@
-import { Itim } from "@next/font/google";
+import { Itim } from "next/font/google";
 
 const itim = Itim({ subsets: ["latin"], weight: ["400"] });
+
 
 function Logo({ className = "" }) {
 	return (
 		<div
 			className={`select-none text-2xl text-purple-500 ${className} ${itim.className}`}
 		>
-			quadrii.co
+			<span className="max-sm:hidden">quadrii.co</span>
+			<span className="sm:hidden">q</span>
 		</div>
 	);
 }

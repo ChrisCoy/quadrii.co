@@ -1,6 +1,6 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { Roboto } from "@next/font/google";
+import { Roboto } from "next/font/google";
 
 import "./../styles/global.css"
 
