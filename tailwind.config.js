@@ -56,8 +56,7 @@ module.exports = {
 			},
 			"effect-2": {
 				"0%, 100%": {
-					transform:
-						"scale(0.7) translate(100%, -100%) rotate(-50deg)",
+					transform: "scale(0.7) translate(100%, -100%) rotate(-50deg)",
 				},
 				"50%": {
 					transform: "translate(50%, -50%) scale(1.2) rotate(-20deg)",
@@ -70,5 +69,20 @@ module.exports = {
 			"effect-2": "effect-2 1.5s ease-in-out",
 		},
 	},
-	plugins: [require("tailwind-scrollbar")],
+	plugins: [
+		require("tailwind-scrollbar"),
+		({ addUtilities, addComponents }) => {
+			addUtilities({
+				".absolute-middle": {
+					"@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2": {},
+				},
+				".absolute-middle-y":{
+					"@apply absolute top-1/2 transform -translate-y-1/2": {},
+				},
+				".absolute-middle-x":{
+					"@apply absolute left-1/2 transform -translate-x-1/2": {},
+				}
+			});
+		},
+	],
 };
