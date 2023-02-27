@@ -1,7 +1,5 @@
-"use client";
-
 import { clsx as cx } from "clsx";
-import { MagnifyingGlass } from "phosphor-react";
+import { MagnifyingGlassIcon } from "../../../common/Icons";
 
 function SearchInput() {
 	return (
@@ -28,7 +26,7 @@ function SearchInput() {
 					"hover:scale-110",
 				)}
 			>
-				<MagnifyingGlass size={24} />
+				<MagnifyingGlassIcon size={24} />
 			</button>
 		</label>
 	);
