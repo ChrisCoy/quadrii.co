@@ -1,3 +1,5 @@
+"use client";
+
 import { clsx as cx } from "clsx";
 import { MagnifyingGlassIcon } from "../../../common/Icons";
 
@@ -26,7 +28,7 @@ function SearchInput() {
 					"hover:scale-110",
 				)}
 			>
-				<MagnifyingGlassIcon size={24} />
+				<MagnifyingGlassIcon size={24}/>
 			</button>
 		</label>
 	);

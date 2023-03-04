@@ -74,14 +74,25 @@ module.exports = {
 		({ addUtilities, addComponents }) => {
 			addUtilities({
 				".absolute-middle": {
-					"@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2": {},
+					"@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2":
+						{},
 				},
-				".absolute-middle-y":{
+				".fixed-middle": {
+					"@apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2":
+						{},
+				},
+				".absolute-middle-y": {
 					"@apply absolute top-1/2 transform -translate-y-1/2": {},
 				},
-				".absolute-middle-x":{
+				".absolute-middle-x": {
 					"@apply absolute left-1/2 transform -translate-x-1/2": {},
-				}
+				},
+				".absolute-middle-x": {
+					"@apply absolute left-1/2 transform -translate-x-1/2": {},
+				},
+				".bounce": {
+					transition: "all 400ms cubic-bezier(.47,1.64,.41,.8)",
+				},
 			});
 		},
 	],

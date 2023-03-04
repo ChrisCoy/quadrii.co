@@ -1,10 +1,13 @@
+"use client";
+
 import { clsx as cx } from "clsx";
 import { Container } from "../Container";
 import { Logo } from "../Logo";
 import { SearchInput } from "./components/SearchInput";
 import { List, MagnifyingGlassIcon } from "../../common/Icons";
 import { faxios } from "@/services/faxios";
-import { useEffect } from "react";
+import { useState } from "react";
+import { MobileMenu } from "./components/MobileMenu";
 
 function NavigatorLinks({ className = "" }) {
 	return (
@@ -18,7 +21,9 @@ function NavigatorLinks({ className = "" }) {
 	);
 }
 
-async function Header() {
+function Header() {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<header
 			className={cx(
@@ -27,6 +32,8 @@ async function Header() {
 				"lg:h-20 lg:py-3",
 			)}
 		>
+			<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+
 			<Container className={cx("gap-4  flex justify-between items-center")}>
 				<Logo />
 				<NavigatorLinks className={cx("max-lg:hidden")} />
@@ -49,16 +56,17 @@ async function Header() {
 						Publique
 					</button>
 				</div>
-				<div className="flex gap-4 md:hidden">
+				<div className="flex gap-4 md:hidden [&>*]:cursor-pointer">
 					<MagnifyingGlassIcon size={24} />
-					<List size={24} />
+					<List size={24} onClick={() => setIsOpen(true)} />
 				</div>
 			</Container>
 			<NavigatorLinks
 				className={cx(
-					"lg:hidden w-full justify-center",
+					"lg:hidden w-full",
 					"mt-3 py-2 border-t-2 border-gray-100/30",
 					"overflow-auto min-w-20 px-4",
+
 					// "max-sm:hidden"
 				)}
 			/>
