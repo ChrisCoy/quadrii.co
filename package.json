@@ -15,6 +15,8 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "clsx": "^1.2.1",
+    "embla-carousel-autoplay": "^7.0.9",
+    "embla-carousel-react": "^7.0.9",
     "eslint": "8.2.0",
     "eslint-config-next": "13.1.6",
     "next": "^13.2.1",

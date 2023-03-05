@@ -19,4 +19,10 @@
 		color: white;
 		@apply bg-purple-700;
 	}
+
+	:root {
+		--slide-spacing: 1rem;
+		--slide-size: 70%;
+		--slide-height: 19rem;
+	}
 }

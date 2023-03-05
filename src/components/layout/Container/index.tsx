@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import cx from "clsx";
 
 interface ContainerProps {
 	children?: ReactNode;
@@ -8,7 +9,7 @@ interface ContainerProps {
 function Container({ children, className = "" }: ContainerProps) {
 	return (
 		<div
-			className={`mx-auto flex w-full max-w-screen-xl gap-4 px-4 ${className}`}
+			className={cx("mx-auto flex w-full max-w-screen-xl gap-4 px-4", className)}
 		>
 			{children}
 		</div>
